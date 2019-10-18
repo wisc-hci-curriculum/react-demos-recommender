@@ -1,22 +1,83 @@
-.App {
-  text-align: center;
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+.color-container {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
+.swatch-like {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.4);
+  font-size: 2em;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.swatch {
+  flex-basis: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  height: 120px;
+  cursor: pointer;
+  position: relative;
+}
+
+.recommended-swatch {
+  margin-top: 10px;
+  flex-basis: 50%;
+  height: 120px;
+  position: relative;
+}
+
+.button-like-dislike {
+  /* position: absolute; */
+  width: 50%;
+  margin-top: 120px;
+}
+
+.button-recommend {
+  margin-top: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.recommendation-output {
+  margin-top: 10px;
+  flex-basis: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  position: relative;
+}
+
+.recommendation-text {
+  color: rgb(129, 129, 129);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+  /* font-size: 1.25em;
+  font-weight: 300;
+  text-transform: uppercase; */
+  z-index: 1;
+}
+
+.header {
+  margin-top: 30px;
 }
